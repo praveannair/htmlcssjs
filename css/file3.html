@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+@keyframes topics {
+  from {left:0px;background-color:pink}
+  to {left:200px;background-color:blue}
+}
+/*@keyframes topics {
+  0% {background-color:pink}
+  50% {background-color:yellow}
+  100% {background-color:green}
+}*/
+
+
+div {
+  width: 300px;
+  height:200px;
+  position:relative;
+  margin:auto;
+  animation-name:topics;
+  animation-duration:10s;
+  animation-delay:1s;
+  animation-iteration-count:2; /* try infinite */
+  animation-direction:reverse; /*reverse alternate-reverse*/
+  animation-timing-function:ease-out; /*ease,linear,ease-in,ease-in-out*/
+  animation-fill-mode: forwards; /*retains the style after */
+  animation: topics 5s linear 2s infinite alternate;
+}
+</style>
+</head>
+<body>
+<div>Hello World</div>
+</body>
+</html>

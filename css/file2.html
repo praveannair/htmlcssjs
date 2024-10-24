@@ -17,17 +17,19 @@
         display: flex;
         justify-content: space-between;
         background-color: yellow;
-        margin-top: 20px;
-        margin-right:10px;
-        margin-left:10px;
-        margin-bottom:10px;
-        padding:10px
+        position: sticky;
+        top:0px;
+        /* margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px; */
+        padding: 10px;
       }
 
       .row1 {
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
         height: 500px;
       }
 
@@ -47,7 +49,7 @@
       .box {
         padding: 100px;
         margin: 50px;
-        background-color: cyan;
+        background-image: radial-gradient(maroon, yellow)
       }
 
       .footer {
@@ -59,15 +61,55 @@
         /* margin: 10px; */
         font-size: 20px;
       }
+
+      .imgClass {
+        background:url('/images/1.PNG');
+        background-repeat: no-repeat;
+        padding: 100px;
+        margin: 50px;
+      }
+
+      li {
+        list-style-type: square;
+        
+      }
+
+      ul {
+        border:solid 1px
+      }
+      a:link {color:green}
+      a:hover {background-color: red;}
+
+       a{
+        text-decoration: none;
+       }
+       input:focus { background-color: pink;}
+
+       input[type=text] {
+        background-color: blue;
+       }
+
+       input {
+        width:400px
+       }
     </style>
   </head>
   <body>
-
     <div class="container">
       <div class="header">
         <div><h1>My Application</h1></div>
-        <div><p>Home|Services|Contact|FAQ</p></div>
+        <div><p>
+         <a href="#">Home</a> 
+          |Services|Contact|FAQ</p></div>
+          <input type="text">
+          <input type="password">
       </div>
+
+      <div class="imgClass">
+        
+      </div>
+
+
       <div class="row1">
         <div class="box">Java</div>
         <div class="box">Python</div>
@@ -83,6 +125,32 @@
         <div class="box">Python</div>
         <div class="box">MERN</div>
       </div>
+
+      
+
+      <div class="row3">
+        
+        <ul>
+          <li>Apple</li>
+          <li>Mango</li>
+          <li>Orange</li>
+        </ul>
+      </div>
+
+
+      <div style="position:fixed;top:0">
+        HEllo World
+        
+      </div>
+
+      <div class="row1">
+        <form>
+         <p> <input type="text"></p>
+        </form>
+      </div>
+
+     
+
       <div class="footer">@copyright 2024. All rights reserved.</div>
     </div>
   </body>

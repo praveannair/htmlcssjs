@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: maroon;
+ /* transition: width 2s, height 2s, transform 2s; /* try without transition */
+  /*transition-delay:1s;*/
+  transition-property: width,height,transform;
+  transition-duration: 2s,5s,1s;
+  transition-timing-function:ease-out; /*ease-in,linear,ease-in-out*/
+}
+div:hover {
+  width: 300px;
+  height:200px;
+  /* transform: rotate(180deg); */
+  /* transform:translate(100px,300px) */
+  transform:scale(2,2)
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
+
+
+
