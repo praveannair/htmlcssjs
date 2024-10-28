@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function greet() {
+      //     document.write("Hello");
+      //   }
+
+      //   greet();
+
+      //   let f1 = function () {
+      //     document.write("Hello");
+      //   };
+
+      //   f1();
+
+      //   function main(x) {
+      //     // document.write(x)
+      //     x();
+      //   }
+      //   main(f1)
+
+      /////////////////////////
+
+      //   let f2 =  () =>  {
+      //     document.write("Hello");
+      //   };
+      //   f2();
+
+      //   let add = (x, y) => {
+      //     document.write(x + y);
+      //   };
+      //   add(3, 4);
+
+      //    let sqr = (n) => {
+      //     return n*n
+      //    }
+
+      //   let add = (x, y) => {
+      //     return x+y
+      //   };
+
+      //   let result = add(3, 4);
+      //   document.write(result)
+
+      //   let answer = sqr(result)
+      //   document.write(answer)
+
+      //   let add = (x, y) => {
+      //     return x + y;
+      //   };
+
+      //   let add = (x, y) => x + y;
+      //       let result = add(3, 4);
+      //   document.write(result);
+
+      let sqr = (n) => {
+        return n * n;
+      };
+
+      let add = (x, y) => [x + y, x - y];
+      let result = add(3, 4);
+      let answer = result[0];
+      document.write(answer);
+      document.write(sqr(answer));
+      
+    </script>
+  </body>
+</html>
