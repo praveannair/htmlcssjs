@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function display() {
+        // divCourse.innerHTML = document.getElementById('course').value
+
+        str = "";
+        for (let e of course.options){
+            if (e.selected){
+                str = str + e.value + " "
+            }
+        }
+        divCourse.innerHTML = str
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      <select id="course" multiple>
+        <option>Java</option>
+        <option>Python</option>
+        <option>Nodejs</option>
+      </select>
+    </p>
+    <button onclick="display()">Submit</button>
+    <hr />
+    <div id="divCourse"></div>
+  </body>
+</html>

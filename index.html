@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      iframe {
+        width: 1000px;
+        height: 800px;
+        border: none;
+      }
+      .menu {
+        background-color: silver;
+        padding: 5px;
+      }
+      h1 {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Github Profiles</h1>
+    <div class="container">
+      <div id="username" class="menu"></div>
+      <div><iframe name="frm"></iframe></div>
+    </div>
+    <script>
+      let githublinks = [
+        "revanthyellapragada17",
+        "silpa83",
+        "ashwini2804",
+        "kiranmothe",
+        "madhum007",
+        "bpatel2695",
+        "sahiti-sanda",
+        "Monali40"
+      ];
+      let str = "";
+      githublinks.forEach((value, index) => {
+        str =
+          str +
+          `${
+            index + 1
+          }.<a href='https://${value}.github.io' target='frm'>${value}</a><br>`;
+      });
+      username.innerHTML = str;
+    </script>
+  </body>
+</html>

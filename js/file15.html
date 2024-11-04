@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .c {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="c" name="d">Hello</div>
+    <div class="c" name="d">Good Morning</div>
+    <div class="c" name="d">Good Evening</div>
+    <p class="c">This is a paragraph</p>
+    <script>
+        // let tags = document.getElementsByName('d')
+        // let tags = document.getElementsByClassName('c')
+        // for (let i=0;i<tags.length;i++){
+        //     tags[i].style.color='blue'
+        // }
+
+
+        let tags = document.querySelectorAll('d')
+        for (let i=0;i<tags.length;i++){
+            tags[i].style.color='pink'
+        }
+
+
+
+      //   let tags = document.getElementsByName('d’)
+        // let tags = document.getElementsByClassName('c’)
+      //   for (let i=0;i<tags.length;i++){
+      //       tags[i].style.color='green’
+      //   }
+    </script>
+  </body>
+</html>

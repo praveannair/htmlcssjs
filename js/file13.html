@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+            // let name = document.getElementById('txtName').value
+            // document.getElementById('lbl').innerHTML = "Hello " +  name
+            let name = document.querySelector('#txtName').value
+            document.querySelector('#lbl').innerHTML = name *  name
+        }
+    </script>
+</head>
+<body>
+    <p><input type="number" id="txtName" required></p>
+    <button onclick="display()">Submit</button>
+    <hr>
+    <label id="lbl"></label>
+</body>
+</html>

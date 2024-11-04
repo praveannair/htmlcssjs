@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .class1 {
+        background-color: black;
+        color: white;
+      }
+      .class2 {
+        background-color: pink;
+        color: black;
+      }
+    </style>
+    <script>
+      function dark() {
+        document.body.classList.add("class1");
+        document.body.classList.remove("class2");
+      }
+
+      function light() {
+        document.body.classList.remove("class1")
+        document.body.classList.add("class2");
+  
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <button onclick="dark()">Dark Theme</button>
+    <button onclick="light()">Light Theme</button>
+  </body>
+</html>
