@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea id="txtArea" rows="4" cols="100"></textarea>
+    <script>
+      let b = document.body;
+      b.onkeydown =
+        b.onkeyup =
+        b.onkeypress =
+          function handle(e) {
+            txtArea.value = e.key;
+            // if (e.key === "ArrowUp") alert("Hello");
+          };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //   let a1 = [1,2,3]
+    //   let a2 = [4,1,6]
+    //   let v = {name:'John'}
+    // //   let a = [...a1,...a2,9]
+    // let a = [...a1,v]
+    //   console.log(a)
+
+      // let a1 = {
+      //     name:'John',
+      //     age:23
+      // }
+      // let a2 = {
+      //     city:'Jax',
+      //     name:'Cathy'
+      // }
+      // let a = {...a1,...a2}
+      // console.log(a)
+
+      let cart = [
+        { name: "Product1", price: 23 },
+        { name: "Product2", price: 29 },
+      ];
+      
+      let product = {
+        name: "Product3",
+        price: 45,
+      };
+
+      cart = [...cart,product]
+      console.log(cart)
+
+    </script>
+  </body>
+</html>

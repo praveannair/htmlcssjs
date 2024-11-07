@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      try {
+        // console.log(a);
+        let a = 20;
+        console.log(a.toLowerCase());
+      } catch (err) {
+        // console.log(err)
+        // console.log(err.message)
+        // console.log(err.name);
+        // if (err.name === "ReferenceError") {
+        //   console.log("Something went wrong");
+        // }
+        if (err.name === "TypeError") {
+          console.log("Number cannot be converted to lowercase");
+        }
+      }
+    </script>
+  </body>
+</html>

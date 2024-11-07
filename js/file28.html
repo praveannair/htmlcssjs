@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Login Form</h1>
+    <div id="error" style="color: red"></div>
+    <p><input type="email" id="e" /></p>
+    <p><input type="password" id="p" /></p>
+    <button>Submit</button>
+    <script>
+      e.onchange = function () {
+        if (!e.value.includes("@")) {
+          error.innerHTML = "Invalid email";
+        }
+      };
+      e.onfocus = function () {
+        error.innerHTML = ""
+      }
+
+    //   e.oninput = function () {
+    //     if (!e.value.includes("@")) {
+    //       error.innerHTML = e.value
+    //     }
+    //   };
+
+      e.oncopy = e.oncut =  function () {
+        alert('Hello')
+      }
+ 
+
+
+      p.onpaste =  function () {
+        return false
+      }
+
+    //   e.onclick =  function () {
+    //     error.innerHTML = "Welcome"
+    //   }
+    </script>
+  </body>
+</html>

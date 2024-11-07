@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function display(name) {
+        divMessage.innerHTML = "Hello " + name;
+      }
+
+      function display1(name) {
+        divMessage.innerHTML = "Hello " + name;
+      }
+    </script>
+  </head>
+  <body>
+    <p onclick="display1(event.target.tagName)">Cathy</p>
+    <input type="text" onchange="display(event.target.value)" />
+    <div id="divMessage"></div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function togglePwd() {
+        let pwd = document.getElementById("txtPwd");
+        if (pwd.type === "password") {
+          pwd.type = "text";
+        } else {
+          pwd.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <p><input type="text" /></p>
+    <p>
+      <input type="password" id="txtPwd" />
+      <input type="checkbox" onclick="togglePwd()" />
+    </p>
+    <button>Login</button>
+  </body>
+</html>

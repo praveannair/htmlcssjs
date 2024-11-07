@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="v">
+      Vehicle
+      <div id="car">
+        car
+        <div id="ford">Ford</div>
+      </div>
+    </div>
+
+    <script>
+      v.addEventListener("click", () => {
+        alert("Vehicle");
+      },{capture:false});
+      car.addEventListener("click", () => {
+        alert("Car");
+      },{capture:false});
+
+      ford.addEventListener("click", () => {
+        alert("Ford");
+      },{capture:false});
+
+
+    </script>
+  </body>
+</html>
